@@ -1,0 +1,7 @@
+langchain==1.2.17
+langchain_core
+langchain-groq==1.1.2
+langchain-community==0.4.1
+python-dotenv==1.2.2
+streamlit==1.57.0
+setuptools==82.0.1
