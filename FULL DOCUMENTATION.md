@@ -35,9 +35,9 @@
 - **Clone your GitHub repo**
 
   ```bash
-  git clone https://github.com/data-guru0/TESTING-9.git
+  git clone [your github repository link]
   ls
-  cd TESTING-9
+  cd [your repository name]
   ls  # You should see the contents of your project
   ```
 
@@ -131,8 +131,8 @@
 ### 4. Interlink your Github on VSCode and on VM
 
 ```bash
-git config --global user.email "gyrogodnon@gmail.com"
-git config --global user.name "data-guru0"
+git config --global user.email "[your email]"
+git config --global user.name "[your name]"
 
 git add .
 git commit -m "commit"
@@ -140,8 +140,8 @@ git push origin main
 ```
 
 - When prompted:
-  - **Username**: `data-guru0`
-  - **Password**: GitHub token (paste, it's invisible)
+  - **Username**: `[your name]`
+  - **Password**: `[your password/token]` (paste, it's invisible)
 
 ---
 
@@ -155,7 +155,7 @@ eval $(minikube docker-env)
 docker build -t streamlit-app:latest .
 
 kubectl create secret generic llmops-secrets \
-  --from-literal=GROQ_API_KEY="" 
+  --from-literal=GROQ_API_KEY="[your groq api key]" 
 
 kubectl apply -f k8s-deployment.yaml
 
